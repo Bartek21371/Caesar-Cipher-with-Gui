@@ -5,7 +5,7 @@ import ctypes as ct
 from tkinter.font import *
 from PIL import Image,ImageTk
 
-#Encrypt message
+#Encrypt/Decrypt messages
 class CaesarCipher:
 
     def __init__(self,shift):
@@ -23,7 +23,7 @@ class CaesarCipher:
     def decrypt_with_range_known_shift(self,message):
         return self.decrypt_message_without_know_shift(message,self.shift)
     
-
+    #Encrypt text
     def _encrypt_text(self,message,shift):
         encrypt_text = ""
 
